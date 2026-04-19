@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+#player {
+  margin: 20px auto;
+  background: black;
+  max-width: 960px;
+}

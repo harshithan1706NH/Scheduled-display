@@ -1,0 +1,521 @@
+.VIEW_HELP
+{
+	color: grey;
+}
+.CL_QUESTION
+{
+	font-style: italic;
+	color: #000066;
+}
+.CL_ANSWER
+{
+	color: black;
+}
+
+
+/* Page Loader Styles ----------- START ----------*/
+.SMART_INIT_PAGE_LOADER {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.SMART_CL_PAGE_LOADER {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: ANIM_LOADER 2s linear infinite;
+}
+
+@keyframes ANIM_LOADER {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide website content when the SMART_CL_PAGE_LOADER is displayed */
+body.SMART_CL_PAGE_LOADER-visible {
+    overflow: hidden;
+}
+/* Page Loader Styles ----------- END ----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.WAIT_LOADING{
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  left: 0;
+  right: 0%;
+  z-index: 99;
+  opacity:0.7;
+  display:none;
+  background: lightgrey url('processing.gif') center center no-repeat;
+}
+
+
+.CL_USER_SUBDEPARTMENT_LINKS_TABLE tr
+{
+	padding-bottom:30px; 
+}
+.CL_USER_SUBDEPARTMENT_LINKS_TABLE td
+{
+	padding:10px; 
+	margin:10px; 
+}
+
+.CL-MRIGHT10
+{
+	padding-right: 10px !important;
+}
+.CL-MRIGHT20
+{
+	padding-right: 20px !important;
+}
+.CL-PRIGHT10
+{
+	padding-right: 10px !important;
+}
+.CL-PRIGHT20
+{
+	padding-right: 20px !important;
+}
+
+.CL_BOLD 
+{
+	font-size:120%;
+}
+.CL_STRIKE
+{
+	text-decoration: line-through !important;
+	color:red;
+}
+
+.CL_BLUE
+{
+	color: blue;
+}
+.CL_RED
+{
+	color: red;
+}
+.CL_GREEN
+{
+	color: green;
+}
+
+.CL_BGRED
+{
+	background: red;
+}
+
+.CL_BGMGREY
+{
+	background-color:  #f2f2f2 !important;
+}
+
+.CL_BGMRED
+{
+	background-color:  #ffcccc !important;
+}
+.CL_BGMBLUE
+{
+	background-color:  #b3e6ff !important;
+}
+.CL_BGMGREEN
+{
+	background-color:  #e6ffe6 !important;
+}
+
+#watermark
+{
+	position:fixed;
+	bottom:50%;
+	right:50%;
+	opacity:0.5;
+	z-index:99;
+	font-size:300%;
+	color:#e6e6e6;
+    -ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Safari 3-8 */
+    transform: rotate(-30deg);
+	
+}
+
+
+MARGIN-SM	
+{
+	margin:1px !important;
+	padding:1px !important;
+}
+
+
+#TABLE_LINKS
+{
+	border-collapse:collapse !important;
+}
+
+#TABLE_LINKS th
+{
+	background-color:red;
+	color: white;
+	box-shadow: 0 0px 0.5px 1px gray;
+}
+#TABLE_LINKS td
+{
+	border: 1px solid grey !important;
+	box-shadow: 0 0px 0.5px 1px gray;
+}
+
+
+
+
+
+
+
+/* Works on Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #000066 #ccccff;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 18px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ccccff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000066;
+  border-radius: 10px;
+  border: 3px solid #ccccff;
+}
+
+
+.DIV_TABLE_SCROLL
+{
+	max-width: 95% !important;
+	max-height: 70vh !important;
+	overflow: scroll !important;
+	position: relative !important;
+}
+
+.TABLE_SCROLL
+{
+	position: relative !important;
+	border-collapse: collapse !important;
+}
+
+.TABLE_SCROLL td, .TABLE_SCROLL th 
+{
+	padding: 0.25em !important;
+}
+
+.TABLE_SCROLL thead th 
+{
+	position: -webkit-sticky !important; /* for Safari */
+	position: sticky !important;
+	top: 0 !important;
+}
+
+.TABLE_SCROLL thead th:first-child 
+{
+	left: 0 !important;
+	z-index: 1 !important;
+}
+
+.TABLE_SCROLL tbody th 
+{
+	position: -webkit-sticky !important; /* for Safari */
+	position: sticky !important;
+	left: 0 !important;
+/*	background: #FFF !important; */
+	border-right: 1px solid #CCC !important;
+}
+
+
+
+
+
+.TABLE_SCROLL th
+{
+	background-color:red !important;
+	color: white !important;
+	box-shadow: 0 0px 0.5px 1px gray;
+}
+.TABLE_SCROLL td
+{
+	border: 1px solid grey !important;
+	box-shadow: 0 0px 0.5px 1px gray;
+}
+
+
+
+
+
+html 
+{
+	scroll-behavior: smooth;
+}
+
+#btnSrollTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+}
+
+
+
+#btnSrollTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+}
+
+
+.CL_ALTERNATE_TABLE
+{
+	background-color: #FFF;
+}
+.CL_ALTERNATE_TABLE tr:nth-child(even) 
+{
+	background-color: #d9d9d9 !important;
+}
+.CL_ALTERNATE_TABLE td:nth-child(even)
+{
+	background-color: #d9d9d9 !important;
+}
+.CL_ALTERNATE_TABLE td
+{
+	margin: 5px !important;
+	padding: 5px !important;
+}
+/*
+.CL_ALTERNATE_TABLE col:nth-child(even)
+{
+	background-color: #CCC !important;
+}
+//.CL_ALTERNATE_TABLE >col:first-child {background: #FF0}
+*/
+
+.CL_ROW_CENTERED, .CL_ROW_CENTERED td, .CL_ROW_CENTERED th
+{
+	text-align: center !important;
+}
+
+.CL_TABLE_BORDERED
+{
+	border-collapse: collapse;
+}
+.CL_TABLE_BORDERED, .CL_TABLE_BORDERED tr, .CL_TABLE_BORDERED td, .CL_TABLE_BORDERED tbody tr, .CL_TABLE_BORDERED tbody td, .CL_TABLE_BORDERED thead tr, .CL_TABLE_BORDERED thead th
+{
+	border: 1px solid black !important;
+}
+
+
+.CL_TABLE_PRODUCT
+{
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	border-collapse: collapse;
+	table-layout:fixed;
+	text-align:left !important;
+	color:black !important;
+}
+.CL_TABLE_PRODUCT tr, .CL_TABLE_PRODUCT td
+{
+	border: 1px solid black;
+}
+
+.CSS_AMOUNT
+{
+	text-align:right !important;
+}
+.CSS_TOTAL
+{
+	text-align:right !important;
+}
+#tot_amt
+{
+	text-align:right !important;
+	font-weight:bold;
+	width:100%;
+}
+
+#pb_save.focus 
+{
+	border: 4px solid grey;
+}
+
+
+@media only screen and (max-width: 600px) 
+{
+	.CSS_PRODUCT {	font-size: 80% !important;	}
+}
+
+@media only screen and (max-width: 800px) 
+{
+	.CSS_PRODUCT {	font-size: 90% !important;	}
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td
+{
+    padding: 0px;
+}
+input[type=number] {  text-align:right;}
+input[type=text] {  text-align:left;}
+
+input[type=number] 
+{
+/*	-webkit-appearance: none; */
+	margin: 0;
+	-moz-appearance: textfield;
+	 border: 1px solid grey;
+}
+input[type=number]:focus 
+{
+	background-color: yellow;
+}
+
+
+@media print
+{
+	.CL_NO_PRINT
+	{
+		display:none;
+	}
+}
+
+
+
+
+@media screen  and (min-width: 0px) and (max-width: 576px) 
+{
+	.slider .slide--headline {font-size: 20px; line-height: 20px; }
+	.CL_SM_HIDE {font-size: 30%;}
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) 
+{
+	.slider .slide--headline {font-size: 25px; line-height: 25px; }
+	.CL_SM_HIDE {font-size: 50%;}
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) 
+{
+	.CL_SM_HIDE {font-size: 60%;}
+}
+
+@media screen and (min-width: 993px)  and (max-width: 1200px) 
+{
+	.CL_SM_HIDE {font-size: 80%;}
+}
+
+@media screen and (min-width: 1201px) 
+{
+	.CL_SM_HIDE {font-size: 100%;}
+}
+
+
+.CL_BOLD 
+{
+	font-size:120%;
+}
+input:focus {
+	background-color: #EEF786;
+}
+
+select:focus {
+	background-color: #EEF786;
+}
+
+
+
+
+.CL_PRINT_TABLE
+{
+	border-collapse: collapse;
+	width:100%;
+}
+.CL_PRINT_TABLE  tH
+{
+	text-align: center;
+	background-color: red;
+	color: white;
+}
+.CL_PRINT_TABLE tr, .CL_PRINT_TABLE td
+{
+	border: 1px solid black;
+	padding: 2px;
+	margin: 2px;
+	text-align: center;
+}
+
+@media print
+{
+	.noPrint
+	{
+		display:none !important;
+	}
+}
+
+
+
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+
+
+.w3-dropdown-content
+{
+	z-index: 10000 !important;  
+	position: absolute !important;
+}
